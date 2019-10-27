@@ -16,7 +16,10 @@ To ensure the program runs as intended:
    - 20 is the task number
    - The 't' needs to be there to seperate the subject/visit info from the task number
    
-To create the database simply run data_parser.py
+4. To create the database simply run data_parser.py
+
+5. After running the file, inspect the csv file and delete any bad entries that are missing kinect data
+   ![](cut_off.png)
              
 
 If an exception is thrown where the file is not sequential, the following steps should be taken:
