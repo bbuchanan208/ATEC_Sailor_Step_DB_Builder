@@ -19,14 +19,16 @@ To ensure the program runs as intended:
 4. To create the database simply run data_parser.py
 
 5. After running the file, inspect the csv file and delete any bad entries that are missing kinect data
-   ![](cut_off.png)
-             
+   - before
+   ![](images/cutoff.png)
+   - after
+   ![](images/post_cut_off.png)
 
 If an exception is thrown where the file is not sequential, the following steps should be taken:
   1. The exception will specify the line number where the kinect data repeats. 
-  ![](exception_pic.png)
+  ![](images/exception_pic.png)
   2. Open the text file mentioned in the exception and delete everything above this line number
-  ![](highlights.png)
+  ![](images/highlights.png)
   3. Ensure that the first two lines of the program are 0 and 0 after the deletion
-  ![](post_delete.png)
+  ![](images/post_delete.png)
   4. Repeat these steps everytime this kind of exception is thrown 
